@@ -1,0 +1,53 @@
+.c-card {
+	display: block;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	&__group {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	&__tag {
+		background: #F1F2F5;
+		color: #777;
+		padding: $space_s 18px;
+		margin-right: $space_m;
+		font-size: $font-size_s;
+		text-align: center;
+		font-weight: bold;
+		&--right {
+		}
+	}
+	
+	&__time {
+		color: #718096;
+		font-size: $font-size_m;
+	}
+	
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 32px;
+		box-sizing: border-box;
+	}
+	
+	&__heading {
+		font-size: 20px;
+	}
+	
+	&__chart {
+		color: $font-color-main;
+		font-weight: bold;
+		display: block;
+		font-size: $font-size_m;
+	}
+	
+	&__item {
+		
+	}
+}

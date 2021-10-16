@@ -1,0 +1,18 @@
+.l-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	min-height: 600px;
+	
+	@include mq(md) {
+		min-height: 450px;
+	}
+	
+	@include mq() {
+		padding-top: $space_3l;
+		padding-bottom: $space_3l;
+	}
+	
+	&--lg {
+		min-height: 350px;
+	}
+}

@@ -1,0 +1,10 @@
+.l-main {
+	&--2column {
+		width: 700px;
+		
+		@include mq(md) {
+			width: 100%;
+			margin-bottom: $space_3l;
+		}
+	}
+}

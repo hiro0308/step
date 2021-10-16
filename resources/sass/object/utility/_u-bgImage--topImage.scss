@@ -1,0 +1,9 @@
+.u-bgImage--topImage {
+	background: url('../storage/project/top-baner.jpg') top right 10vw/600px no-repeat;
+	@include mq(md) {
+		background: url('../storage/project/top-baner.jpg') top right 10vw/350px no-repeat;
+	}
+	@include mq() {
+		background: url('../storage/project/top-baner.jpg') top right 10vw/300px no-repeat;
+	}
+}

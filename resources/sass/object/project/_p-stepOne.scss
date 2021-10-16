@@ -1,0 +1,33 @@
+.p-stepOne {
+	margin-bottom: $space_3l;
+	position: relative;
+	
+	&__heading {
+		margin-bottom: $space_l;
+	}
+	
+	&__subHeading {
+		margin-top: $space_m;
+	}
+	&__foot {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__challenge {
+		padding: $space_m $space_l;
+		background: #F15252;
+		border: 2px solid #F15252;
+		color: $color-base;
+		font-size: $font-size_m;
+		border-radius: 12px;
+		max-width: 230px;
+		width: 100%;
+		
+		&:hover {
+			background: $color-base;
+			color: #F15252;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.l-container {
+	max-width: 1200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $space_3l;
+	padding-right: $space_3l;
+	box-sizing: border-box;
+	
+	@include mq(sm) {
+		padding-left: $space_l;
+		padding-right: $space_l;
+	}
+	
+	&--m {
+		max-width: 1000px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: $space_3l;
+		padding-right: $space_3l;
+		box-sizing: border-box;
+		
+		@include mq(md) {
+			padding-left: $space_xl;
+			padding-right: $space_xl;
+		}
+	}
+	
+	&--s {
+		max-width: 800px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

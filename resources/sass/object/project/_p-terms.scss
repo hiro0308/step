@@ -1,0 +1,49 @@
+.p-terms {
+	&__item {
+		margin-bottom: $space_xl;
+	}
+	&__heading {
+		text-align: center;
+		font-size: $font-size_xl;
+		margin-bottom: $space_l;
+	}
+	&__subHeading {
+		font-size: $font-size_default;
+		margin-bottom: $space_l;
+	}
+	&__txt {
+		font-size: $font-size_m;
+		margin-bottom: $space_m;
+	}
+	&__description  {
+		font-size: $font-size_m;
+	}
+	&__content {
+		padding-left: $space_xl;
+	}
+	&__revision {
+		text-align: right;
+		margin-top: $space_xxl;
+		font-size: $font-size_m;
+	}
+	&__privacy {
+		border: 2px solid #000;
+		padding: $space_l;
+		box-sizing: border-box;
+		font-size: $font-size_m;
+		&__text {
+			margin-bottom: $space_l;
+			font-weight: bold;
+			font-size: $font-size_default;
+			
+			@include mq() {
+				font-size: $font-size_m;
+			}
+		}
+		&__block {
+			&__text {
+				margin: 0 0 $space_s 0;
+			}
+		}
+	}
+}

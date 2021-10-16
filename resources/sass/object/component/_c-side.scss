@@ -1,0 +1,47 @@
+.c-side {
+	&__heading {
+		font-size: $font-size_default;
+		font-weight: bold;
+		margin-bottom: $space_m;
+	}
+	&__mypage {
+		margin-bottom: $space_xl;;
+		&__list {
+			background: $color-base;
+		}
+		
+		&__item {
+			position: relative;
+			border-bottom: 1px solid #d3d3d3;
+			
+			&:last-child {
+				border-bottom: inherit;
+			}
+			
+			&:hover {
+				cursor: pointer;
+				text-decoration: none;
+				background: #f9f9f9;
+			}
+			&::after {
+				content: '\f054';
+				font-weight: bold;
+				font-family: "Font Awesome 5 Free";
+				position: absolute;
+				color: #777;
+				font-size: $font-size_l;
+				top: 20%;
+				right: 5%;
+			}
+		}
+		
+		&__link {
+			padding: $space_m;
+			display: block;
+			
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

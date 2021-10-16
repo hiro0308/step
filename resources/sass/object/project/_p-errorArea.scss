@@ -1,0 +1,20 @@
+.p-errorArea {
+	background: #FFE6E6;
+	padding: $space_l $space_3l;
+	width: 100%;
+	margin-bottom: $space_xxl;
+	box-sizing: border-box;
+	font-size: $font-size-m;
+	
+	&__list {
+		color: #842029;
+	}
+	
+	&__item {
+		list-style: initial;
+		margin-bottom: $space_s;
+		&:last-child {
+			margin-bottom: inherit;
+		}
+	}
+}

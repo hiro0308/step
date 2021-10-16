@@ -1,0 +1,123 @@
+.c-nav {
+	@include mq(md) {
+		display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: rgba(255, 255, 255, .85);
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    transition: .5s;
+		&.active {
+			display: inline-block;
+      transition: .5s;
+      transform: translateX(-100%);
+      z-index: 3;
+			& .c-nav__login__btn,
+			& .c-nav__register__btn {
+				display: block;
+				border-radius: inherit;
+				text-align: center;
+				padding: inherit;
+			}
+			& .c-nav {
+				&__login {
+					&__item {
+						margin-right: inherit;
+					}
+				}
+				&__register {
+					&__btn {
+						&:hover {
+							background: #FF3344;
+						}
+					}
+				}
+			}
+    }
+	}
+	&__list {
+		display: flex;
+		@include mq(md) {
+			display: block;
+			height: 90px;
+		}
+	}
+	&__login__btn,
+	&__register__btn {
+		border-radius: 8px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__login {
+		&__item {
+			margin-right: $space_l;
+			font-weight: bold;
+		}
+		&__btn {
+			border: 1px solid $color-main;
+			color: $color-main;
+			padding: $space_m $space_xxl;
+			
+			&:hover {
+				background: $color-main;
+				color: #fff;
+			}
+		}
+	}
+	&__register {
+		&__item {
+			font-weight: bold;
+		}
+		&__btn {
+			background: #F15252;
+			color: #fff;
+			padding: $space_m $space_xl;
+			&:hover {
+				background: #f26161;
+			}
+		}
+	}
+	&__mypage {
+		&__item {
+			@include mq(md) {
+				text-align: center;
+				border-top: 1px solid $color_main;
+			}
+		}
+		&__btn {
+			padding: $space_s $space_m;
+			&:hover {
+				color: $color-main;
+			}
+			@include mq(md) {
+				display: block;
+				border-bottom: 1px solid $color_main;
+				color: $color-main;
+			}
+		}
+	}
+	&__logout {
+		&__btn {
+			border: none;
+			padding: $space_s $space_m;
+			background-color: $color-base;
+			font-size: $font-size-default;
+			@include mq(md) {
+				display: block;
+				height: 90px;
+				margin: inherit;
+				text-decoration: none;
+				border-bottom: 1px solid $color_main;
+				width: 100%;
+				color: $color-main;
+			}
+			&:hover {
+				text-decoration: underline;
+				color: $color-main;
+			}
+		}
+	}
+}

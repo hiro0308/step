@@ -1,0 +1,104 @@
+.c-search {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	
+	@include mq(md) {
+		display: block;
+	}
+	
+ 	&__head {
+		padding-right: $space_l;
+		box-sizing: border-box;
+		margin-bottom: $space_xxl;
+	}
+	
+	&__heading {
+		font-size: $font-size_xxl;
+		
+		@include mq() {
+			font-size: $font-size_xl;
+		}
+		
+		&--s {
+			font-size: $font-size_default;
+			display: block;
+			
+			@include mq() {
+				font-size: $font-size_m;
+			}
+		}
+	}
+	
+	&__body {
+		border-left: 3px solid #C0C4CE;
+		padding-left: $space_xxl;
+		width: 100%;
+		box-sizing: border-box;
+		position: relative;
+		
+		@include mq() {
+			padding-left: $space_l;
+		}
+	}
+	
+	&--icon {
+		position: absolute;
+		top: 6%;
+		right: 18%;
+		@include mq(md) {
+			top: 6%;
+			right: 3%;
+		}
+	}
+	
+	&__input {
+		width: 85%;
+		background: #f6f5f4;
+		border: none;
+		padding: $space_m $space_l;
+		border-radius: 20px;
+		height: 40px;
+		box-sizing: border-box;
+		font-size: $font-size_default;
+		margin-bottom: $space_l;
+		
+		@include mq(md) {
+			width: 100%;
+		}
+	}
+	
+	&__txt {
+		font-weight: bold;
+	}
+	
+	&__select {
+		display: block;
+		width: 85%;
+		background: $color-base;
+		border: 2px solid #C0C4CE;
+		padding: $space_m $space_l;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: $font-size_default;
+		margin-bottom: $space_l;
+		
+		@include mq(md) {
+			width: 100%;
+		}
+	}
+	
+	&__btn {
+		background: $color-main;
+		color: $color-base;
+		max-width: 320px;
+		width: 100%;
+		border: none;
+		padding: $space_m $space_l;
+		border-radius: 20px;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin: $space_xl auto 0 auto;
+	}
+}

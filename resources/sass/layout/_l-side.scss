@@ -1,0 +1,8 @@
+.l-side {
+	width: 240px;
+	margin-right: $space_3l;
+	
+	@include mq(md) {
+		width: 100%;
+	}
+}

@@ -1,0 +1,118 @@
+.c-btn {
+	display: block;
+	&:hover {
+		cursor: pointer;
+	}
+	&--primary {
+		padding: $space_s;
+		background: $color-main;
+		color: $color-base;
+		border: none;
+		font-size: $font-size_default;
+		border-radius: 20px;
+		max-width: 320px;
+		width: 100%;
+		font-weight: bold;
+		text-align: center;
+		height: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		@include mq() {
+			max-width: inherit;
+		}
+		
+		&:hover {
+			background: #25CCCC;
+		}
+		&--s {
+			max-width: 250px;
+			@include mq(md) {
+				width: 80%;
+				max-width: inherit;
+			}
+		}
+	}
+	
+	&--upload {
+		position: relative;
+		padding: $space_s;
+		color: $color-main;
+		border: 3px solid $color-main;
+		font-size: $font-size_default;
+		border-radius: 15px;
+		max-width: 200px;
+		width: 100%;
+		font-weight: bold;
+		text-align: center;
+		height: 30px;
+		margin: $space_xxl auto;
+		line-height: 30px;
+		
+		&:hover {
+			background: $color-main;
+			color: $color-base;
+		}
+	}
+	
+	&--secondary {
+		padding: $space_s;
+		background: #FF2233;
+		color: $color-base;
+		border: none;
+		font-size: $font-size_default;
+		border-radius: 20px;
+		max-width: 320px;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		line-height: 30px;
+		font-weight: bold;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: $space_xxl;
+		transition: .3s;
+		&:hover {
+			background: #FF3344;
+			text-decoration: none;
+		}
+		&--googleIcon {
+			&::before {
+				font-family: "Font Awesome 5 Free","Font Awesome 5 Brands";
+				content: '\f1a0';
+				font-size: 15px;
+				font-weight: 400;
+				margin-right: 4px;
+				color: $color-base;
+			}
+		}
+	}
+	&--delete {
+		padding: $space_s;
+		background: #FF2233;
+		color: $color-base;
+		border: none;
+		font-size: $font-size_default;
+		border-radius: 20px;
+		max-width: 250px;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		line-height: 30px;
+		font-weight: bold;
+		box-sizing: border-box;
+		margin-left: auto;
+		margin-right: auto;
+		transition: .3s;
+		&:hover {
+			background: #FF3344;
+			text-decoration: none;
+		}
+		@include mq(md) {
+			width: 80%;
+			max-width: inherit;
+			margin-top: $space_l;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.l-header {
+	line-height: 80px;
+	box-sizing: border-box;
+	height: 80px;
+	background: $color-base;
+	width: 100%;
+	@include mq(sm) {
+		height: 70px;
+		line-height: 70px;
+	}
+	&__inner {
+		padding-left: $space_xxl;
+		padding-right: $space_xxl;
+		box-sizing: border-box;
+	}
+	&__nav {
+		margin-left: auto;
+		margin-right: $space_l;
+		@include mq(md) {
+			margin: inherit;
+		}
+	}
+}

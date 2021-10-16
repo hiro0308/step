@@ -1,0 +1,15 @@
+.p-login {
+	text-align: center;
+	font-size: $font-size_s;
+	
+	&__link {
+		color: $color-main;
+		
+		&__forget {
+			margin-top: $space_m;
+			color: $color-main;
+			font-size: $font-size_m;
+			display: block;
+		}
+	}
+}

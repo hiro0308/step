@@ -1,0 +1,57 @@
+.p-confirm {
+	width: 100%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	&__list {
+		display: flex;
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		box-sizing: border-box;
+	}
+	&__head {
+		background: #efefef;
+		width: 25%;
+		padding: $space_l;
+		box-sizing: border-box;
+		font-weight: bold;
+		font-size: $font-size_m;
+	}
+	&__txt {
+		width: 75%;
+		padding: $space_l;
+		box-sizing: border-box;
+		 word-break: break-all;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		margin-top: $space_l;
+	}
+	&__back {
+		border: none;
+		padding: $space_m;
+		max-width: 200px;
+		width: 100%;
+		color: $color-base;
+		background: #F15252;
+		margin-right: $space_m;
+		&:hover {
+			background: $color-base;
+			color: #F15252;
+			border: 2px solid #F15252;
+		}
+	}
+	&__submit {
+		border: none;
+		padding: $space_m;
+		max-width: 200px;
+		width: 100%;
+		color: $color-base;
+		background: $color-main;
+		&:hover {
+			background: $color-base;
+			color: $color-main;
+			border: 2px solid $color-main;
+		}
+	}
+}

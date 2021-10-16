@@ -1,0 +1,38 @@
+.c-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	&__item {
+		width: 40px;
+		height: 40px;
+		margin: 4px;
+		box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+		
+		&.active > .c-pagination__link {
+			background: $color-main;
+			color: $color-base;
+			
+			&:hover {
+				cursor: not-allowed;
+			}
+		}
+	}
+	
+	&__link {
+		border: 1px solid #C0C4CE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: all 0.3s;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+		
+		&:hover {
+			cursor: pointer;
+			background: #f4f4f4;
+		}
+	}
+}

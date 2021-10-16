@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	color: $font-color-base;
+	text-size-adjust: 100%;
+}
+
+h1,h2,h3 {
+	margin: 0;
+}
+
+a {
+	color: $font-color-base;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+img {
+	vertical-align: bottom;
+	width: 100%;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ol {
+	padding: 0;
+}

@@ -1,0 +1,193 @@
+.c-form {
+	&__heading {
+		max-width: 800px;
+		box-sizing: border-box;
+		position: relative;
+	  margin-bottom: $space_xxl;
+	  padding: $space_xl $space_l;
+	  border-radius: 10px;
+	  background: #eee;
+		
+		@include mq(md) {
+			padding: $space_l;
+			font-size: $font-size_l;
+		}
+		
+		&::before,
+		&::after {
+		  position: absolute;
+		  content: '';
+		  border-radius: 50%;
+		  background: #eee;
+		}
+		
+		&::before {
+		  bottom: -15px;
+		  left: 30px;
+		  width: 30px;
+		  height: 30px;
+		}
+		
+		&::after {
+		  bottom: -30px;
+		  left: 50px;
+		  width: 15px;
+		  height: 15px;
+		}
+	}
+
+	&__ttl {
+		margin-bottom: $space_3l;
+		text-align: center;
+		font-size: $font-size_xxl;
+		
+		@include mq(md) {
+			font-size: $font-size_xl;
+			margin-bottom: $space_xl;
+		}
+	}
+	
+	&__head {
+		display: block;
+		margin-bottom: $space_l;
+		
+		&__txt {
+			margin-bottom: $space_s;
+		}
+	}
+	
+	&__input {
+		width: 100%;
+		border-radius: 12px;
+		border: 1px solid #ccc;
+		height: 40px;
+		padding: $space_m;
+		box-sizing: border-box;
+	}
+	
+	&__checkbox {
+		width: 18px;
+		height: 18px;
+		vertical-align: middle;
+		margin-right: $space_s;
+		margin: 0 $space_s 3px 0;
+	}
+	
+	&__selectBox {
+		display: block;
+		width: 100%;
+		background: $color-base;
+		border: 1px solid #ccc;
+		padding: $space_m $space_l;
+		border-radius: 12px;
+		box-sizing: border-box;
+		font-size: $font-size_default;
+		margin-bottom: $space_l;
+	}
+	
+	&__textarea {
+		width: 100%;
+		height: 300px;
+		padding: $space_m;
+		font-size: $font-size_default;
+		box-sizing: border-box;
+		margin-bottom: $space_l;
+		border: 1px solid #ccc;
+		border-radius: 12px;
+		
+		&::placeholder {
+			color: #B3B3B3;
+		}
+	}
+	
+	&__label {
+		padding: $space_s $space_m;
+		color: $color-base;
+		font-size: $font-size_ss;
+		background: #F15252;
+		margin-left: $space_m;
+	}
+	
+	&__circle {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		
+		&--img {
+			height: 100%;
+			border-radius: 50%;
+			width: 100%;
+		}
+	}
+	
+	&__file {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+	&--anounce {
+		margin-left: $space_m;
+	}
+	
+	&__status__message {
+		border: 1px solid #2fb4ce;
+		color: #2fb4ce;
+		border-radius: 20px;
+		padding: $space_l;
+		width: 100%;
+		margin-bottom: $space_xxl;
+		box-sizing: border-box;
+		font-size: $font-size-m;
+		font-weight: bold;
+	}
+	
+	&--border {
+		border: 1px solid #444;
+		padding: $space_l;
+		box-sizing: border-box;
+	}
+	
+	&__note {
+		font-size: $font-size_s;
+		margin-left: $space_m;
+	}
+	
+	&__subTitle {
+		padding: 20px 60px;
+	}
+	
+	&__addForm {
+		width: 100%;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		padding: $space_l;
+		color: $color_main;
+		font-weight: bold;
+		border-radius: 40px;
+		margin-top: $space_xxl;
+		
+		&:hover {
+			cursor: pointer;
+			background: $color_main;
+			color: $color-base;
+		}
+		
+		&::before {
+			 font-family: "Font Awesome 5 Free";
+			 font-weight: bold;
+			 content: '\f067';
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.p-thanks {
+	min-height: 300px;
+	&__link {
+		text-decoration: underline;
+		&:hover {
+			color: $color-main;
+		}
+	}
+}
